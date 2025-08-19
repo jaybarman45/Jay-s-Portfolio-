@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include FontAwesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Atlas</div>
+        <!-- Menu Items -->
+        <ul class="menu">
+            <li><a href="#home"><i class="fas fa-home"></i> <span>Home</span></a></li>
+            <li><a href="#about"><i class="fas fa-user"></i> <span>About</span></a></li>
+            <li><a href="#services"><i class="fas fa-cogs"></i> <span>Services</span></a></li>
+            <li><a href="#portfolio"><i class="fas fa-briefcase"></i> <span>Portfolio</span></a></li>
+            <li><a href="#contact-us"><i class="fas fa-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+        <!-- Menu Toggle Button -->
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Hello, my name is <span class="highlight">Your Name</span></h1>
+        <h2>I’m a <span class="typed-text"></span><span class="cursor"></span></h2>
+        <button class="more-about-btn">More About Me</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about hidden">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="profile.jpeg" alt="Your Image">
+            </div>
+            <div class="about-text">
+                <h3>About Me</h3>
+                <p>I am a web designer and developer with expertise in creating beautiful and functional websites. I have over 5 years of experience in various aspects of web design, including UI/UX, frontend, and backend development.</p>
+                <h3 style="margin-top: 10px">My Skills</h3>
+                <ul class="skills-list">
+                    <li>Web Design</li>
+                    <li>Graphic Design</li>
+                    <li>Frontend Development</li>
+                    <li>Backend Development</li>
+                    <li>Responsive Design</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Sections (e.g., Services, Portfolio, Contact) -->
+<!-- Services Section -->
+<section id="services" class="services">
+    <h2>My Services</h2>
+    <div class="service-cards">
+        <div class="service-card">
+            <i class="fas fa-laptop-code service-icon"></i>
+            <h3>Web Development</h3>
+            <p>Creating professional, responsive websites for businesses and personal projects.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-paint-brush service-icon"></i>
+            <h3>Graphic Design</h3>
+            <p>Designing visually stunning and functional designs for both print and web.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-mobile-alt service-icon"></i>
+            <h3>Mobile App Development</h3>
+            <p>Building modern, scalable mobile applications for iOS and Android platforms.</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="portfolio-section" id="portfolio">
+    <h2>My Portfolio</h2>
+    <div class="portfolio-grid">
+        <div class="card">
+            <div class="card-image">
+                <img src="project 1.jpg" alt="Project 1">
+            </div>
+            <div class="card-content">
+                <h3>Project Title 1</h3>
+                <p>Short description of the project goes here.</p>
+            </div>
+            <div class="card-overlay">
+                <h4>More Details</h4>
+                <p>Discover Patlakhawa High School's interactive website, featuring school news, events, and academic achievements. Designed with HTML, CSS, and JavaScript for easy navigation and engagement.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="project 2.jpg" alt="Project 2">
+            </div>
+            <div class="card-content">
+                <h3>Project Title 2</h3>
+                <p>Short description of the project goes here.</p>
+            </div>
+            <div class="card-overlay">
+                <h4>More Details</h4>
+                <p>Discover our sleek and user-friendly shopping website. Enjoy a seamless browsing experience with a wide range of products, secure payment options, and responsive design for all devices. Shop effortlessly and find everything you need in one place.</p>
+            </div>
+        </div>
+
+        <!-- Repeat similar blocks for more projects -->
+    </div>
+</section>
+
+
+<section id="contact-us">
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Your Phone Number">
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+<footer id="footer">
+  <div class="footer-container">
+    <div class="footer-section about-us">
+      <h3>About Us</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="footer-section quick-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section social-media">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="#" class="social-icon"><img src="logo_facebook.png" alt="Facebook"></a>
+        <a href="#" class="social-icon"><img src="logo_twitter.png" alt="Twitter"></a>
+        <a href="#" class="social-icon"><img src="logo_instagram.png" alt="Instagram"></a>
+        <a href="#" class="social-icon"><img src="logo_linkdin.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 Your Company. All rights reserved.</p>
+  </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
